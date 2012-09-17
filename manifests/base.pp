@@ -50,7 +50,7 @@ class idea::base(
     group => 'root',
   }
 
-  archive { "Download IntelliJ IDEA ${version}":
+  archive { "idea-${version}":
     ensure     => present,
     url        => $url,
     checksum   => false,
@@ -62,6 +62,6 @@ class idea::base(
   file { $target:
     ensure  => link,
     target  => "/opt/${build}",
-    require => Archive["Download IntelliJ IDEA ${version}"],
+    require => Archive["idea-${version}"],
   }
 }
