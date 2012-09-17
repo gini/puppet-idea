@@ -42,9 +42,12 @@ class idea::base(
 ) {
 
   Exec {
-    path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
-    owner   => 'root',
-    group   => 'root',
+    path  => [
+      '/usr/local/sbin', '/usr/local/bin',
+      '/usr/sbin', '/usr/bin', '/sbin', '/bin',
+    ]
+    user  => 'root',
+    group => 'root',
   }
 
   archive { "Download IntelliJ IDEA ${version}":
