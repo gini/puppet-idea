@@ -66,7 +66,7 @@ class idea::community(
   }
 
   $url_real = $url ? {
-    'UNSET' => "${base_url}/ideaIC-${version_real}.tar.gz",
+    'UNSET' => "${base_url_real}/ideaIC-${version_real}.tar.gz",
     default => $url,
   }
 
