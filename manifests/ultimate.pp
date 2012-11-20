@@ -33,8 +33,8 @@
 # === Examples
 #
 #  class { 'idea':
-#    version => '11.1.3',
-#    build   => '117.798',
+#    version => '11.1.4',
+#    build   => '117.963',
 #  }
 #
 # === Authors

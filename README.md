@@ -15,7 +15,7 @@ Usage
 Example:
 
     class { 'idea::ultimate':
-      version => '11.1.3',
+      version => '11.1.4',
     }
 
 
