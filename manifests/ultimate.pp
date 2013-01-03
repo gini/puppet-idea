@@ -33,8 +33,8 @@
 # === Examples
 #
 #  class { 'idea':
-#    version => '11.1.4',
-#    build   => '117.963',
+#    version => '12.0.1',
+#    build   => '123.94',
 #  }
 #
 # === Authors
@@ -43,7 +43,7 @@
 #
 # === Copyright
 #
-# Copyright 2012 smarchive GmbH
+# Copyright 2012, 2013 smarchive GmbH
 #
 class idea::ultimate(
   $version  = 'UNSET',

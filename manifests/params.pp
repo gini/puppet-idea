@@ -6,11 +6,11 @@
 #
 # === Copyright
 #
-# Copyright 2012 smarchive GmbH
+# Copyright 2012, 2013 smarchive GmbH
 #
 class idea::params {
   $version = $::idea_version ? {
-    undef   => '11.1.4',
+    undef   => '12.0.1',
     default => $::idea_version
   }
 
@@ -30,7 +30,7 @@ class idea::params {
   }
 
   $build = $::idea_build ? {
-    undef   => '117.963',
+    undef   => '123.94',
     default => $::idea_build,
   }
 
