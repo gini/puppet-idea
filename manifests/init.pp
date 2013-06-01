@@ -29,8 +29,8 @@
 # === Examples
 #
 #  class { 'idea':
-#    version => '12.0.1',
-#    build   => '123.94',
+#    version => '12.1.3',
+#    build   => '129.451',
 #  }
 #
 # === Authors

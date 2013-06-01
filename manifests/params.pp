@@ -10,7 +10,7 @@
 #
 class idea::params {
   $version = $::idea_version ? {
-    undef   => '12.0.1',
+    undef   => '12.1.3',
     default => $::idea_version
   }
 
@@ -30,7 +30,7 @@ class idea::params {
   }
 
   $build = $::idea_build ? {
-    undef   => '123.94',
+    undef   => '129.451',
     default => $::idea_build,
   }
 
