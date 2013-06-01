@@ -1,4 +1,4 @@
-name         'puppet-idea'
+name         'smarchive-idea'
 version      '0.1.0'
 author       'Jochen Schalanda'
 license      'Apache 2.0'
