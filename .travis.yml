@@ -4,7 +4,7 @@ rvm:
   - 1.9.2
   - 1.9.3
 before_script:
-  - 'git clone git://github.com/smarchive/puppet-archive.git spec/fixtures/modules/archive'
+  - 'git clone git://github.com/gini/puppet-archive.git spec/fixtures/modules/archive'
 env:
   - PUPPET_VERSION=2.6.2
   - PUPPET_VERSION=2.6.18
