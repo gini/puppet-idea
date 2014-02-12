@@ -25,6 +25,9 @@
 #   Specify the location of the symlink to the IntelliJ IDEA installation on
 #   the local filesystem.
 #
+# [*timeout*]
+#   Download timeout passed to archive module.
+#
 # === Variables
 #
 # The variables being used by this module are named exactly like the class
@@ -51,6 +54,7 @@ class idea::community(
   $url      = 'UNSET',
   $build    = 'UNSET',
   $target   = 'UNSET',
+  $timeout  = 'UNSET',
 ) {
 
   include idea::params
@@ -75,6 +79,11 @@ class idea::community(
     default => $target,
   }
 
+  $timeout_real = $timeout ? {
+    'UNSET' => $::idea::params::timeout,
+    default => $timeout,
+  }
+
   $build_real = $build ? {
     'UNSET' => $::idea::params::build,
     default => $build,
@@ -87,5 +96,6 @@ class idea::community(
     url     => $url_real,
     build   => $community_build,
     target  => $target_real,
+    timeout => $timeout_real,
   }
 }

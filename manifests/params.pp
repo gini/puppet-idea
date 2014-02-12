@@ -48,4 +48,9 @@ class idea::params {
     undef   => '/opt/idea',
     default => $::idea_target,
   }
+
+  $timeout = $::idea_timeout ? {
+    undef   => 300,
+    default => $::idea_timeout,
+  }
 }

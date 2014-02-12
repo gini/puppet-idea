@@ -21,6 +21,9 @@
 #   Specify the location of the symlink to the IntelliJ IDEA installation on
 #   the local filesystem.
 #
+# [*timeout*]
+#   Download timeout passed to archive module.
+#
 # === Variables
 #
 # The variables being used by this module are named exactly like the class
@@ -39,6 +42,7 @@ class idea::base(
   $url,
   $build,
   $target,
+  $timeout,
 ) {
 
   Exec {
@@ -57,6 +61,7 @@ class idea::base(
     src_target => '/var/tmp',
     target     => '/opt',
     extension  => 'tar.gz',
+    timeout    => $timeout,
   }
 
   file { $target:
