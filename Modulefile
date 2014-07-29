@@ -1,5 +1,5 @@
 name         'gini-idea'
-version      '0.2.0'
+version      '0.3.0'
 author       'Jochen Schalanda'
 license      'Apache 2.0'
 project_page 'https://github.com/gini/puppet-idea'
